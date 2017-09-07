@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Lecture01.dir/main.cpp.o CMakeFiles/Lecture01.dir/hw1c.cpp.o CMakeFiles/Lecture01.dir/hw1f.cpp.o CMakeFiles/Lecture01.dir/hw1d.cpp.o CMakeFiles/Lecture01.dir/hw1a.cpp.o CMakeFiles/Lecture01.dir/hw1e.cpp.o  -o Lecture01 
