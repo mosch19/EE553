@@ -4,7 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/mosch/CLionProjects/Lecture02/arrays.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/arrays.cpp.o"
+  "/home/mosch/CLionProjects/Lecture02/functions.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/functions.cpp.o"
+  "/home/mosch/CLionProjects/Lecture02/hw2b.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/hw2b.cpp.o"
   "/home/mosch/CLionProjects/Lecture02/main.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/main.cpp.o"
+  "/home/mosch/CLionProjects/Lecture02/test.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

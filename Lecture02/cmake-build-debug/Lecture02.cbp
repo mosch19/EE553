@@ -84,7 +84,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mosch/CLionProjects/Lecture02/arrays.cpp">
+			<Option target="Lecture02"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture02/functions.cpp">
+			<Option target="Lecture02"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture02/hw2b.cpp">
+			<Option target="Lecture02"/>
+		</Unit>
 		<Unit filename="/home/mosch/CLionProjects/Lecture02/main.cpp">
+			<Option target="Lecture02"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture02/test.cpp">
 			<Option target="Lecture02"/>
 		</Unit>
 		<Unit filename="/home/mosch/CLionProjects/Lecture02/CMakeLists.txt">

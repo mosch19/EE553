@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Lecture02.dir/main.cpp.o"
+  "CMakeFiles/Lecture02.dir/functions.cpp.o"
+  "CMakeFiles/Lecture02.dir/arrays.cpp.o"
+  "CMakeFiles/Lecture02.dir/test.cpp.o"
+  "CMakeFiles/Lecture02.dir/hw2b.cpp.o"
   "Lecture02.pdb"
   "Lecture02"
 )

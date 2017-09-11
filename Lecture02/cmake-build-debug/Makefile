@@ -123,6 +123,87 @@ Lecture02/fast:
 	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/build
 .PHONY : Lecture02/fast
 
+arrays.o: arrays.cpp.o
+
+.PHONY : arrays.o
+
+# target to build an object file
+arrays.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/arrays.cpp.o
+.PHONY : arrays.cpp.o
+
+arrays.i: arrays.cpp.i
+
+.PHONY : arrays.i
+
+# target to preprocess a source file
+arrays.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/arrays.cpp.i
+.PHONY : arrays.cpp.i
+
+arrays.s: arrays.cpp.s
+
+.PHONY : arrays.s
+
+# target to generate assembly for a file
+arrays.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/arrays.cpp.s
+.PHONY : arrays.cpp.s
+
+functions.o: functions.cpp.o
+
+.PHONY : functions.o
+
+# target to build an object file
+functions.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/functions.cpp.o
+.PHONY : functions.cpp.o
+
+functions.i: functions.cpp.i
+
+.PHONY : functions.i
+
+# target to preprocess a source file
+functions.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/functions.cpp.i
+.PHONY : functions.cpp.i
+
+functions.s: functions.cpp.s
+
+.PHONY : functions.s
+
+# target to generate assembly for a file
+functions.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/functions.cpp.s
+.PHONY : functions.cpp.s
+
+hw2b.o: hw2b.cpp.o
+
+.PHONY : hw2b.o
+
+# target to build an object file
+hw2b.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2b.cpp.o
+.PHONY : hw2b.cpp.o
+
+hw2b.i: hw2b.cpp.i
+
+.PHONY : hw2b.i
+
+# target to preprocess a source file
+hw2b.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2b.cpp.i
+.PHONY : hw2b.cpp.i
+
+hw2b.s: hw2b.cpp.s
+
+.PHONY : hw2b.s
+
+# target to generate assembly for a file
+hw2b.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2b.cpp.s
+.PHONY : hw2b.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +231,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test.o: test.cpp.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Lecture02"
+	@echo "... arrays.o"
+	@echo "... arrays.i"
+	@echo "... arrays.s"
+	@echo "... functions.o"
+	@echo "... functions.i"
+	@echo "... functions.s"
+	@echo "... hw2b.o"
+	@echo "... hw2b.i"
+	@echo "... hw2b.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 
