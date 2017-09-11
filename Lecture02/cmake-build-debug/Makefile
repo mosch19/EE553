@@ -177,6 +177,33 @@ functions.cpp.s:
 	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/functions.cpp.s
 .PHONY : functions.cpp.s
 
+hw2a.o: hw2a.cpp.o
+
+.PHONY : hw2a.o
+
+# target to build an object file
+hw2a.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2a.cpp.o
+.PHONY : hw2a.cpp.o
+
+hw2a.i: hw2a.cpp.i
+
+.PHONY : hw2a.i
+
+# target to preprocess a source file
+hw2a.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2a.cpp.i
+.PHONY : hw2a.cpp.i
+
+hw2a.s: hw2a.cpp.s
+
+.PHONY : hw2a.s
+
+# target to generate assembly for a file
+hw2a.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2a.cpp.s
+.PHONY : hw2a.cpp.s
+
 hw2b.o: hw2b.cpp.o
 
 .PHONY : hw2b.o
@@ -203,6 +230,60 @@ hw2b.s: hw2b.cpp.s
 hw2b.cpp.s:
 	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2b.cpp.s
 .PHONY : hw2b.cpp.s
+
+hw2c.o: hw2c.cpp.o
+
+.PHONY : hw2c.o
+
+# target to build an object file
+hw2c.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2c.cpp.o
+.PHONY : hw2c.cpp.o
+
+hw2c.i: hw2c.cpp.i
+
+.PHONY : hw2c.i
+
+# target to preprocess a source file
+hw2c.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2c.cpp.i
+.PHONY : hw2c.cpp.i
+
+hw2c.s: hw2c.cpp.s
+
+.PHONY : hw2c.s
+
+# target to generate assembly for a file
+hw2c.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2c.cpp.s
+.PHONY : hw2c.cpp.s
+
+hw2e.o: hw2e.cpp.o
+
+.PHONY : hw2e.o
+
+# target to build an object file
+hw2e.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2e.cpp.o
+.PHONY : hw2e.cpp.o
+
+hw2e.i: hw2e.cpp.i
+
+.PHONY : hw2e.i
+
+# target to preprocess a source file
+hw2e.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2e.cpp.i
+.PHONY : hw2e.cpp.i
+
+hw2e.s: hw2e.cpp.s
+
+.PHONY : hw2e.s
+
+# target to generate assembly for a file
+hw2e.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2e.cpp.s
+.PHONY : hw2e.cpp.s
 
 main.o: main.cpp.o
 
@@ -273,9 +354,18 @@ help:
 	@echo "... functions.o"
 	@echo "... functions.i"
 	@echo "... functions.s"
+	@echo "... hw2a.o"
+	@echo "... hw2a.i"
+	@echo "... hw2a.s"
 	@echo "... hw2b.o"
 	@echo "... hw2b.i"
 	@echo "... hw2b.s"
+	@echo "... hw2c.o"
+	@echo "... hw2c.i"
+	@echo "... hw2c.s"
+	@echo "... hw2e.o"
+	@echo "... hw2e.i"
+	@echo "... hw2e.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

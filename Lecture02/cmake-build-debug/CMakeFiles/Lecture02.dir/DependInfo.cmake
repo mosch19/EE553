@@ -6,7 +6,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mosch/CLionProjects/Lecture02/arrays.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/arrays.cpp.o"
   "/home/mosch/CLionProjects/Lecture02/functions.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/functions.cpp.o"
+  "/home/mosch/CLionProjects/Lecture02/hw2a.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/hw2a.cpp.o"
   "/home/mosch/CLionProjects/Lecture02/hw2b.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/hw2b.cpp.o"
+  "/home/mosch/CLionProjects/Lecture02/hw2c.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/hw2c.cpp.o"
+  "/home/mosch/CLionProjects/Lecture02/hw2e.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/hw2e.cpp.o"
   "/home/mosch/CLionProjects/Lecture02/main.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/main.cpp.o"
   "/home/mosch/CLionProjects/Lecture02/test.cpp" "/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles/Lecture02.dir/test.cpp.o"
   )

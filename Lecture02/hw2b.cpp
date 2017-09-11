@@ -6,17 +6,16 @@
 #include <cmath>
 using namespace std;
 
+//  garbage
 bool isPrime(unsigned long long p) {
     if (p == 4) {
         return false;
     }
-    for (int i = 2; i < sqrt(p); i++) {
+    for (int i = 2; i <= sqrt(p); i++) {
         if (p % i == 0) {
             return false;
         }
-        cout << i << ' ';
     }
-    cout << endl;
     return true;
 }
 

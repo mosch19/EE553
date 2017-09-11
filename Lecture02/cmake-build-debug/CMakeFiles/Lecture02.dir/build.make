@@ -177,13 +177,88 @@ CMakeFiles/Lecture02.dir/hw2b.cpp.o.provides: CMakeFiles/Lecture02.dir/hw2b.cpp.
 CMakeFiles/Lecture02.dir/hw2b.cpp.o.provides.build: CMakeFiles/Lecture02.dir/hw2b.cpp.o
 
 
+CMakeFiles/Lecture02.dir/hw2e.cpp.o: CMakeFiles/Lecture02.dir/flags.make
+CMakeFiles/Lecture02.dir/hw2e.cpp.o: ../hw2e.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Lecture02.dir/hw2e.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lecture02.dir/hw2e.cpp.o -c /home/mosch/CLionProjects/Lecture02/hw2e.cpp
+
+CMakeFiles/Lecture02.dir/hw2e.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lecture02.dir/hw2e.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mosch/CLionProjects/Lecture02/hw2e.cpp > CMakeFiles/Lecture02.dir/hw2e.cpp.i
+
+CMakeFiles/Lecture02.dir/hw2e.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lecture02.dir/hw2e.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mosch/CLionProjects/Lecture02/hw2e.cpp -o CMakeFiles/Lecture02.dir/hw2e.cpp.s
+
+CMakeFiles/Lecture02.dir/hw2e.cpp.o.requires:
+
+.PHONY : CMakeFiles/Lecture02.dir/hw2e.cpp.o.requires
+
+CMakeFiles/Lecture02.dir/hw2e.cpp.o.provides: CMakeFiles/Lecture02.dir/hw2e.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2e.cpp.o.provides.build
+.PHONY : CMakeFiles/Lecture02.dir/hw2e.cpp.o.provides
+
+CMakeFiles/Lecture02.dir/hw2e.cpp.o.provides.build: CMakeFiles/Lecture02.dir/hw2e.cpp.o
+
+
+CMakeFiles/Lecture02.dir/hw2c.cpp.o: CMakeFiles/Lecture02.dir/flags.make
+CMakeFiles/Lecture02.dir/hw2c.cpp.o: ../hw2c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Lecture02.dir/hw2c.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lecture02.dir/hw2c.cpp.o -c /home/mosch/CLionProjects/Lecture02/hw2c.cpp
+
+CMakeFiles/Lecture02.dir/hw2c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lecture02.dir/hw2c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mosch/CLionProjects/Lecture02/hw2c.cpp > CMakeFiles/Lecture02.dir/hw2c.cpp.i
+
+CMakeFiles/Lecture02.dir/hw2c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lecture02.dir/hw2c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mosch/CLionProjects/Lecture02/hw2c.cpp -o CMakeFiles/Lecture02.dir/hw2c.cpp.s
+
+CMakeFiles/Lecture02.dir/hw2c.cpp.o.requires:
+
+.PHONY : CMakeFiles/Lecture02.dir/hw2c.cpp.o.requires
+
+CMakeFiles/Lecture02.dir/hw2c.cpp.o.provides: CMakeFiles/Lecture02.dir/hw2c.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2c.cpp.o.provides.build
+.PHONY : CMakeFiles/Lecture02.dir/hw2c.cpp.o.provides
+
+CMakeFiles/Lecture02.dir/hw2c.cpp.o.provides.build: CMakeFiles/Lecture02.dir/hw2c.cpp.o
+
+
+CMakeFiles/Lecture02.dir/hw2a.cpp.o: CMakeFiles/Lecture02.dir/flags.make
+CMakeFiles/Lecture02.dir/hw2a.cpp.o: ../hw2a.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Lecture02.dir/hw2a.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lecture02.dir/hw2a.cpp.o -c /home/mosch/CLionProjects/Lecture02/hw2a.cpp
+
+CMakeFiles/Lecture02.dir/hw2a.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lecture02.dir/hw2a.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mosch/CLionProjects/Lecture02/hw2a.cpp > CMakeFiles/Lecture02.dir/hw2a.cpp.i
+
+CMakeFiles/Lecture02.dir/hw2a.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lecture02.dir/hw2a.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mosch/CLionProjects/Lecture02/hw2a.cpp -o CMakeFiles/Lecture02.dir/hw2a.cpp.s
+
+CMakeFiles/Lecture02.dir/hw2a.cpp.o.requires:
+
+.PHONY : CMakeFiles/Lecture02.dir/hw2a.cpp.o.requires
+
+CMakeFiles/Lecture02.dir/hw2a.cpp.o.provides: CMakeFiles/Lecture02.dir/hw2a.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw2a.cpp.o.provides.build
+.PHONY : CMakeFiles/Lecture02.dir/hw2a.cpp.o.provides
+
+CMakeFiles/Lecture02.dir/hw2a.cpp.o.provides.build: CMakeFiles/Lecture02.dir/hw2a.cpp.o
+
+
 # Object files for target Lecture02
 Lecture02_OBJECTS = \
 "CMakeFiles/Lecture02.dir/main.cpp.o" \
 "CMakeFiles/Lecture02.dir/functions.cpp.o" \
 "CMakeFiles/Lecture02.dir/arrays.cpp.o" \
 "CMakeFiles/Lecture02.dir/test.cpp.o" \
-"CMakeFiles/Lecture02.dir/hw2b.cpp.o"
+"CMakeFiles/Lecture02.dir/hw2b.cpp.o" \
+"CMakeFiles/Lecture02.dir/hw2e.cpp.o" \
+"CMakeFiles/Lecture02.dir/hw2c.cpp.o" \
+"CMakeFiles/Lecture02.dir/hw2a.cpp.o"
 
 # External object files for target Lecture02
 Lecture02_EXTERNAL_OBJECTS =
@@ -193,9 +268,12 @@ Lecture02: CMakeFiles/Lecture02.dir/functions.cpp.o
 Lecture02: CMakeFiles/Lecture02.dir/arrays.cpp.o
 Lecture02: CMakeFiles/Lecture02.dir/test.cpp.o
 Lecture02: CMakeFiles/Lecture02.dir/hw2b.cpp.o
+Lecture02: CMakeFiles/Lecture02.dir/hw2e.cpp.o
+Lecture02: CMakeFiles/Lecture02.dir/hw2c.cpp.o
+Lecture02: CMakeFiles/Lecture02.dir/hw2a.cpp.o
 Lecture02: CMakeFiles/Lecture02.dir/build.make
 Lecture02: CMakeFiles/Lecture02.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Lecture02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mosch/CLionProjects/Lecture02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Lecture02"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lecture02.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -208,6 +286,9 @@ CMakeFiles/Lecture02.dir/requires: CMakeFiles/Lecture02.dir/functions.cpp.o.requ
 CMakeFiles/Lecture02.dir/requires: CMakeFiles/Lecture02.dir/arrays.cpp.o.requires
 CMakeFiles/Lecture02.dir/requires: CMakeFiles/Lecture02.dir/test.cpp.o.requires
 CMakeFiles/Lecture02.dir/requires: CMakeFiles/Lecture02.dir/hw2b.cpp.o.requires
+CMakeFiles/Lecture02.dir/requires: CMakeFiles/Lecture02.dir/hw2e.cpp.o.requires
+CMakeFiles/Lecture02.dir/requires: CMakeFiles/Lecture02.dir/hw2c.cpp.o.requires
+CMakeFiles/Lecture02.dir/requires: CMakeFiles/Lecture02.dir/hw2a.cpp.o.requires
 
 .PHONY : CMakeFiles/Lecture02.dir/requires
 
