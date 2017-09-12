@@ -5,8 +5,13 @@
 using namespace std;
 
 //  MUST SUPPORT UP TO N = 30!
-int fact() {
-
+int fact(long long int x) {
+    int factorial = 1;
+    while (x > 1) {
+        factorial *= x;
+        x--;
+    }
+    return factorial;
 }
 
 int fact2() {

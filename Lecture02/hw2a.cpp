@@ -6,12 +6,11 @@
 using namespace std;
 
 int main() {
-    for (signed int i = -45; i < 41; i += 5) {
-        for (int j = 5; j < 61; j += 5) {
-            cout << int(35.74 + (0.6215 * i) - (35.75 * pow(j, 0.16)) + ((0.4275 * i) * pow(j, 0.16))) << ' ';
+    for (int i = 5; i < 61; i += 5) {
+        for (signed int j = 40; j > -46; j -= 5) {
+            cout << int(35.74 + (0.6215 * j) - (35.75 * pow(i, 0.16)) + ((0.4275 * j) * pow(i, 0.16))) << ' ';
         }
         cout << endl;
     }
-
     return 0;
 }
