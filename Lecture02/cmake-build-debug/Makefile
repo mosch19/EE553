@@ -177,6 +177,33 @@ functions.cpp.s:
 	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/functions.cpp.s
 .PHONY : functions.cpp.s
 
+hw1g.o: hw1g.cpp.o
+
+.PHONY : hw1g.o
+
+# target to build an object file
+hw1g.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw1g.cpp.o
+.PHONY : hw1g.cpp.o
+
+hw1g.i: hw1g.cpp.i
+
+.PHONY : hw1g.i
+
+# target to preprocess a source file
+hw1g.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw1g.cpp.i
+.PHONY : hw1g.cpp.i
+
+hw1g.s: hw1g.cpp.s
+
+.PHONY : hw1g.s
+
+# target to generate assembly for a file
+hw1g.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture02.dir/build.make CMakeFiles/Lecture02.dir/hw1g.cpp.s
+.PHONY : hw1g.cpp.s
+
 hw2a.o: hw2a.cpp.o
 
 .PHONY : hw2a.o
@@ -354,6 +381,9 @@ help:
 	@echo "... functions.o"
 	@echo "... functions.i"
 	@echo "... functions.s"
+	@echo "... hw1g.o"
+	@echo "... hw1g.i"
+	@echo "... hw1g.s"
 	@echo "... hw2a.o"
 	@echo "... hw2a.i"
 	@echo "... hw2a.s"

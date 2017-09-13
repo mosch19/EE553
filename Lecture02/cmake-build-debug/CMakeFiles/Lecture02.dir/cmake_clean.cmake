@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Lecture02.dir/hw2e.cpp.o"
   "CMakeFiles/Lecture02.dir/hw2c.cpp.o"
   "CMakeFiles/Lecture02.dir/hw2a.cpp.o"
+  "CMakeFiles/Lecture02.dir/hw1g.cpp.o"
   "Lecture02.pdb"
   "Lecture02"
 )

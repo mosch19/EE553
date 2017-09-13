@@ -1,5 +1,5 @@
 //
-// Created by mosch on 9/11/17.
+// Created by Michael Moschetti on 9/11/17.
 //
 #include <iostream>
 #include <cmath>

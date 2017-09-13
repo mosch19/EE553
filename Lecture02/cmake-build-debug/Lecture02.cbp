@@ -90,6 +90,9 @@
 		<Unit filename="/home/mosch/CLionProjects/Lecture02/functions.cpp">
 			<Option target="Lecture02"/>
 		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture02/hw1g.cpp">
+			<Option target="Lecture02"/>
+		</Unit>
 		<Unit filename="/home/mosch/CLionProjects/Lecture02/hw2a.cpp">
 			<Option target="Lecture02"/>
 		</Unit>
