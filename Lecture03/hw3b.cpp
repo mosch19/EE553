@@ -73,6 +73,8 @@ public:
         }
         for (int i = 1; i < 11; i++) {
             for (int j = 1; j < 11; j++) {
+                // get rid of this double for loop by using an 1d array and adding width of total to get to other side
+                // look at the library to get terminal length and width and then I can print character by character
                 for (int k = -1; k < 2; k++) {
                     for (int l = -1; l < 2; l++) {
                         // can't count (0, 0) to the sum
