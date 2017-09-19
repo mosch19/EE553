@@ -1,9 +1,12 @@
 //
 // Created by mosch on 9/18/17.
+// Sources: http://www.cplusplus.com/reference/sstream/stringstream/stringstream/ (string stream to pull out gen/freq data)
 //
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <sstream>
+
 using namespace std;
 
 class Life {
@@ -15,10 +18,21 @@ private:
 public:
     // why cant I initialize an array inside a constructor?
     Life() {gen = 10; freq = 1;}
+    int getGen() {
+        return gen;
+    }
+    int getFreq() {
+        return freq;
+    }
     void print() const {
         for (int i = 1; i < 11; i++) {
             for (int j = 1; j < 11; j++) {
-                cout << L[i][j] << ' ';
+                if (L[i][j] == 0) {
+                    cout << '-' << ' ';
+                } else {
+                    // cout << L[i][j] << ' ';
+                    cout << '*' << ' ';
+                }
             }
             cout << endl;
         }
@@ -31,15 +45,21 @@ public:
         int rowIndex = 1;
         while (!init.eof()) {
             getline(init, data);
+            if (rowIndex ==1) {
+                stringstream ss;
+                ss << data;
+                ss >> gen >> freq;
+            }
             for (int h = 0; h < data.size(); h++) {
                 if (data[h] == '*') {
-                    L[rowIndex][h + 1] = 1;
+                    L[rowIndex - 1][h + 1] = 1;
                 }
             }
             rowIndex++;
             data.clear();
         }
         init.close();
+        // cout << "GEN: " << gen << ", FREQ: " << freq << endl;
     }
     // check whether the cell lives or dies
     void checkCell() {
@@ -70,7 +90,7 @@ public:
                     // cell dies from overpopulation
                     next[i][j] = 0;
                 } else if (sum == 3) {
-                    // reproduction
+                    // cell reproduction
                     next[i][j] = 1;
                 }
                 sum = 0;
@@ -88,17 +108,35 @@ public:
 
 };
 
+void displayGen(int x) {
+    cout << "*******************" << endl;
+    if (x < 10) {
+        cout << "** GENERATION " << '0' << x << " **" << endl;
+    } else if (x < 100) {
+        cout << "** GENERATION " << x << " **" << endl;
+    } else {
+        cout << "* GENERATION " << x << " *" << endl;
+    }
+    cout << "*******************" << endl;
+}
+
 int main() {
-    int gen = 0;
 
     Life x;
     x.loadState();
-    x.print();
-    cout << "*******************" << endl;
-    cout << "***GENERATION " << gen << " ***" << endl;
-    x.checkCell();
-    cout << "*******************" << endl;
-    x.print();
+    int gen = x.getGen();
+    int freq = x.getFreq();
+    int count = freq;
+
+    for (int z = 0; z <= gen; z++) {
+        if (count == freq) {
+            count = 0;
+            displayGen(z);
+            x.print();
+        }
+        x.checkCell();
+        count++;
+    }
 
     return 0;
 }
