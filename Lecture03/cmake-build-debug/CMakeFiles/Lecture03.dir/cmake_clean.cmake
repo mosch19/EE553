@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Lecture03.dir/main.cpp.o"
   "CMakeFiles/Lecture03.dir/oop.cpp.o"
+  "CMakeFiles/Lecture03.dir/hw3x.cpp.o"
+  "CMakeFiles/Lecture03.dir/hw3a.cpp.o"
+  "CMakeFiles/Lecture03.dir/hw3b.cpp.o"
   "Lecture03.pdb"
   "Lecture03"
 )

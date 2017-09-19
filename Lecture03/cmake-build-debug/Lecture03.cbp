@@ -84,6 +84,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mosch/CLionProjects/Lecture03/hw3a.cpp">
+			<Option target="Lecture03"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture03/hw3b.cpp">
+			<Option target="Lecture03"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture03/hw3x.cpp">
+			<Option target="Lecture03"/>
+		</Unit>
 		<Unit filename="/home/mosch/CLionProjects/Lecture03/main.cpp">
 			<Option target="Lecture03"/>
 		</Unit>

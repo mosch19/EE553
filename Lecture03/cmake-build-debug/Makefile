@@ -123,6 +123,87 @@ Lecture03/fast:
 	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/build
 .PHONY : Lecture03/fast
 
+hw3a.o: hw3a.cpp.o
+
+.PHONY : hw3a.o
+
+# target to build an object file
+hw3a.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3a.cpp.o
+.PHONY : hw3a.cpp.o
+
+hw3a.i: hw3a.cpp.i
+
+.PHONY : hw3a.i
+
+# target to preprocess a source file
+hw3a.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3a.cpp.i
+.PHONY : hw3a.cpp.i
+
+hw3a.s: hw3a.cpp.s
+
+.PHONY : hw3a.s
+
+# target to generate assembly for a file
+hw3a.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3a.cpp.s
+.PHONY : hw3a.cpp.s
+
+hw3b.o: hw3b.cpp.o
+
+.PHONY : hw3b.o
+
+# target to build an object file
+hw3b.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3b.cpp.o
+.PHONY : hw3b.cpp.o
+
+hw3b.i: hw3b.cpp.i
+
+.PHONY : hw3b.i
+
+# target to preprocess a source file
+hw3b.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3b.cpp.i
+.PHONY : hw3b.cpp.i
+
+hw3b.s: hw3b.cpp.s
+
+.PHONY : hw3b.s
+
+# target to generate assembly for a file
+hw3b.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3b.cpp.s
+.PHONY : hw3b.cpp.s
+
+hw3x.o: hw3x.cpp.o
+
+.PHONY : hw3x.o
+
+# target to build an object file
+hw3x.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3x.cpp.o
+.PHONY : hw3x.cpp.o
+
+hw3x.i: hw3x.cpp.i
+
+.PHONY : hw3x.i
+
+# target to preprocess a source file
+hw3x.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3x.cpp.i
+.PHONY : hw3x.cpp.i
+
+hw3x.s: hw3x.cpp.s
+
+.PHONY : hw3x.s
+
+# target to generate assembly for a file
+hw3x.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3x.cpp.s
+.PHONY : hw3x.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -186,6 +267,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Lecture03"
+	@echo "... hw3a.o"
+	@echo "... hw3a.i"
+	@echo "... hw3a.s"
+	@echo "... hw3b.o"
+	@echo "... hw3b.i"
+	@echo "... hw3b.s"
+	@echo "... hw3x.o"
+	@echo "... hw3x.i"
+	@echo "... hw3x.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

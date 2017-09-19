@@ -105,19 +105,97 @@ CMakeFiles/Lecture03.dir/oop.cpp.o.provides: CMakeFiles/Lecture03.dir/oop.cpp.o.
 CMakeFiles/Lecture03.dir/oop.cpp.o.provides.build: CMakeFiles/Lecture03.dir/oop.cpp.o
 
 
+CMakeFiles/Lecture03.dir/hw3x.cpp.o: CMakeFiles/Lecture03.dir/flags.make
+CMakeFiles/Lecture03.dir/hw3x.cpp.o: ../hw3x.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mosch/CLionProjects/Lecture03/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lecture03.dir/hw3x.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lecture03.dir/hw3x.cpp.o -c /home/mosch/CLionProjects/Lecture03/hw3x.cpp
+
+CMakeFiles/Lecture03.dir/hw3x.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lecture03.dir/hw3x.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mosch/CLionProjects/Lecture03/hw3x.cpp > CMakeFiles/Lecture03.dir/hw3x.cpp.i
+
+CMakeFiles/Lecture03.dir/hw3x.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lecture03.dir/hw3x.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mosch/CLionProjects/Lecture03/hw3x.cpp -o CMakeFiles/Lecture03.dir/hw3x.cpp.s
+
+CMakeFiles/Lecture03.dir/hw3x.cpp.o.requires:
+
+.PHONY : CMakeFiles/Lecture03.dir/hw3x.cpp.o.requires
+
+CMakeFiles/Lecture03.dir/hw3x.cpp.o.provides: CMakeFiles/Lecture03.dir/hw3x.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3x.cpp.o.provides.build
+.PHONY : CMakeFiles/Lecture03.dir/hw3x.cpp.o.provides
+
+CMakeFiles/Lecture03.dir/hw3x.cpp.o.provides.build: CMakeFiles/Lecture03.dir/hw3x.cpp.o
+
+
+CMakeFiles/Lecture03.dir/hw3a.cpp.o: CMakeFiles/Lecture03.dir/flags.make
+CMakeFiles/Lecture03.dir/hw3a.cpp.o: ../hw3a.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mosch/CLionProjects/Lecture03/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lecture03.dir/hw3a.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lecture03.dir/hw3a.cpp.o -c /home/mosch/CLionProjects/Lecture03/hw3a.cpp
+
+CMakeFiles/Lecture03.dir/hw3a.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lecture03.dir/hw3a.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mosch/CLionProjects/Lecture03/hw3a.cpp > CMakeFiles/Lecture03.dir/hw3a.cpp.i
+
+CMakeFiles/Lecture03.dir/hw3a.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lecture03.dir/hw3a.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mosch/CLionProjects/Lecture03/hw3a.cpp -o CMakeFiles/Lecture03.dir/hw3a.cpp.s
+
+CMakeFiles/Lecture03.dir/hw3a.cpp.o.requires:
+
+.PHONY : CMakeFiles/Lecture03.dir/hw3a.cpp.o.requires
+
+CMakeFiles/Lecture03.dir/hw3a.cpp.o.provides: CMakeFiles/Lecture03.dir/hw3a.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3a.cpp.o.provides.build
+.PHONY : CMakeFiles/Lecture03.dir/hw3a.cpp.o.provides
+
+CMakeFiles/Lecture03.dir/hw3a.cpp.o.provides.build: CMakeFiles/Lecture03.dir/hw3a.cpp.o
+
+
+CMakeFiles/Lecture03.dir/hw3b.cpp.o: CMakeFiles/Lecture03.dir/flags.make
+CMakeFiles/Lecture03.dir/hw3b.cpp.o: ../hw3b.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mosch/CLionProjects/Lecture03/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Lecture03.dir/hw3b.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lecture03.dir/hw3b.cpp.o -c /home/mosch/CLionProjects/Lecture03/hw3b.cpp
+
+CMakeFiles/Lecture03.dir/hw3b.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lecture03.dir/hw3b.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mosch/CLionProjects/Lecture03/hw3b.cpp > CMakeFiles/Lecture03.dir/hw3b.cpp.i
+
+CMakeFiles/Lecture03.dir/hw3b.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lecture03.dir/hw3b.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mosch/CLionProjects/Lecture03/hw3b.cpp -o CMakeFiles/Lecture03.dir/hw3b.cpp.s
+
+CMakeFiles/Lecture03.dir/hw3b.cpp.o.requires:
+
+.PHONY : CMakeFiles/Lecture03.dir/hw3b.cpp.o.requires
+
+CMakeFiles/Lecture03.dir/hw3b.cpp.o.provides: CMakeFiles/Lecture03.dir/hw3b.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/hw3b.cpp.o.provides.build
+.PHONY : CMakeFiles/Lecture03.dir/hw3b.cpp.o.provides
+
+CMakeFiles/Lecture03.dir/hw3b.cpp.o.provides.build: CMakeFiles/Lecture03.dir/hw3b.cpp.o
+
+
 # Object files for target Lecture03
 Lecture03_OBJECTS = \
 "CMakeFiles/Lecture03.dir/main.cpp.o" \
-"CMakeFiles/Lecture03.dir/oop.cpp.o"
+"CMakeFiles/Lecture03.dir/oop.cpp.o" \
+"CMakeFiles/Lecture03.dir/hw3x.cpp.o" \
+"CMakeFiles/Lecture03.dir/hw3a.cpp.o" \
+"CMakeFiles/Lecture03.dir/hw3b.cpp.o"
 
 # External object files for target Lecture03
 Lecture03_EXTERNAL_OBJECTS =
 
 Lecture03: CMakeFiles/Lecture03.dir/main.cpp.o
 Lecture03: CMakeFiles/Lecture03.dir/oop.cpp.o
+Lecture03: CMakeFiles/Lecture03.dir/hw3x.cpp.o
+Lecture03: CMakeFiles/Lecture03.dir/hw3a.cpp.o
+Lecture03: CMakeFiles/Lecture03.dir/hw3b.cpp.o
 Lecture03: CMakeFiles/Lecture03.dir/build.make
 Lecture03: CMakeFiles/Lecture03.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mosch/CLionProjects/Lecture03/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Lecture03"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mosch/CLionProjects/Lecture03/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Lecture03"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lecture03.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +205,9 @@ CMakeFiles/Lecture03.dir/build: Lecture03
 
 CMakeFiles/Lecture03.dir/requires: CMakeFiles/Lecture03.dir/main.cpp.o.requires
 CMakeFiles/Lecture03.dir/requires: CMakeFiles/Lecture03.dir/oop.cpp.o.requires
+CMakeFiles/Lecture03.dir/requires: CMakeFiles/Lecture03.dir/hw3x.cpp.o.requires
+CMakeFiles/Lecture03.dir/requires: CMakeFiles/Lecture03.dir/hw3a.cpp.o.requires
+CMakeFiles/Lecture03.dir/requires: CMakeFiles/Lecture03.dir/hw3b.cpp.o.requires
 
 .PHONY : CMakeFiles/Lecture03.dir/requires
 
