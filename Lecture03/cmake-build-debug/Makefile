@@ -231,6 +231,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+notes.o: notes.cpp.o
+
+.PHONY : notes.o
+
+# target to build an object file
+notes.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/notes.cpp.o
+.PHONY : notes.cpp.o
+
+notes.i: notes.cpp.i
+
+.PHONY : notes.i
+
+# target to preprocess a source file
+notes.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/notes.cpp.i
+.PHONY : notes.cpp.i
+
+notes.s: notes.cpp.s
+
+.PHONY : notes.s
+
+# target to generate assembly for a file
+notes.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture03.dir/build.make CMakeFiles/Lecture03.dir/notes.cpp.s
+.PHONY : notes.cpp.s
+
 oop.o: oop.cpp.o
 
 .PHONY : oop.o
@@ -279,6 +306,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... notes.o"
+	@echo "... notes.i"
+	@echo "... notes.s"
 	@echo "... oop.o"
 	@echo "... oop.i"
 	@echo "... oop.s"

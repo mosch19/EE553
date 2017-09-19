@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/mosch/CLionProjects/Lecture03/hw3a.cpp
+iostream
+-
+
+/home/mosch/CLionProjects/Lecture03/hw3b.cpp
+iostream
+-
+fstream
+-
+string
+-
+
+/home/mosch/CLionProjects/Lecture03/hw3x.cpp
+iostream
+-
+cmath
+-
+
 /home/mosch/CLionProjects/Lecture03/main.cpp
 iostream
 -
@@ -14,5 +32,19 @@ string
 cmath
 -
 cstdint
+-
+
+/home/mosch/CLionProjects/Lecture03/notes.cpp
+iostream
+-
+string
+-
+cmath
+-
+cstdint
+-
+
+/home/mosch/CLionProjects/Lecture03/oop.cpp
+iostream
 -
 

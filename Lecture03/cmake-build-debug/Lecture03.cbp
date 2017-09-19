@@ -96,6 +96,9 @@
 		<Unit filename="/home/mosch/CLionProjects/Lecture03/main.cpp">
 			<Option target="Lecture03"/>
 		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture03/notes.cpp">
+			<Option target="Lecture03"/>
+		</Unit>
 		<Unit filename="/home/mosch/CLionProjects/Lecture03/oop.cpp">
 			<Option target="Lecture03"/>
 		</Unit>
