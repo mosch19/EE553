@@ -1,5 +1,5 @@
 //
-// Created by mosch on 9/18/17.
+// Created by Michael Moschetti on 9/18/17.
 // Sources: http://www.cplusplus.com/reference/sstream/stringstream/stringstream/ (string stream to pull out gen/freq data)
 //
 #include <iostream>
@@ -14,7 +14,7 @@ private:
     int L[12][12] = { { 0 } };
     int gen;
     int freq;
-    const string fileName = "hw3.dat";
+    const string fileName = "hw3b.dat";
 public:
     // why cant I initialize an array inside a constructor?
     Life() {gen = 10; freq = 1;}
@@ -27,6 +27,7 @@ public:
     void print() const {
         for (int i = 1; i < 11; i++) {
             for (int j = 1; j < 11; j++) {
+                // add sleep for aesthetics
                 if (L[i][j] == 0) {
                     cout << '-' << ' ';
                 } else {

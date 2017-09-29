@@ -1,5 +1,6 @@
 //
 // Created by Michael Moschetti on 9/12/17.
+// Source used: https://stackoverflow.com/questions/1986418/typeid-versus-typeof-in-c
 //
 #include <iostream>
 #include <string>
@@ -22,8 +23,8 @@ string numtoString(int x) {
     char y[digits];
     for (int i = 0; i < digits; i++) {
         y[i] = x % 10 + '0';
-        x /= 10;
         temp += y[i];
+        x /= 10;
     }
     result = temp;
     for (int i = 0; i < digits + 1; i++) {
