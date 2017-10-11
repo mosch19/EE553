@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Lecture06.dir/main.cpp.o CMakeFiles/Lecture06.dir/matrix.cpp.o  -o Lecture06 
