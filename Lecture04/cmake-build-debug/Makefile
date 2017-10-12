@@ -150,6 +150,33 @@ hw4a.cpp.s:
 	$(MAKE) -f CMakeFiles/Lecture04.dir/build.make CMakeFiles/Lecture04.dir/hw4a.cpp.s
 .PHONY : hw4a.cpp.s
 
+hw4b.o: hw4b.cpp.o
+
+.PHONY : hw4b.o
+
+# target to build an object file
+hw4b.cpp.o:
+	$(MAKE) -f CMakeFiles/Lecture04.dir/build.make CMakeFiles/Lecture04.dir/hw4b.cpp.o
+.PHONY : hw4b.cpp.o
+
+hw4b.i: hw4b.cpp.i
+
+.PHONY : hw4b.i
+
+# target to preprocess a source file
+hw4b.cpp.i:
+	$(MAKE) -f CMakeFiles/Lecture04.dir/build.make CMakeFiles/Lecture04.dir/hw4b.cpp.i
+.PHONY : hw4b.cpp.i
+
+hw4b.s: hw4b.cpp.s
+
+.PHONY : hw4b.s
+
+# target to generate assembly for a file
+hw4b.cpp.s:
+	$(MAKE) -f CMakeFiles/Lecture04.dir/build.make CMakeFiles/Lecture04.dir/hw4b.cpp.s
+.PHONY : hw4b.cpp.s
+
 hw4c.o: hw4c.cpp.o
 
 .PHONY : hw4c.o
@@ -243,6 +270,9 @@ help:
 	@echo "... hw4a.o"
 	@echo "... hw4a.i"
 	@echo "... hw4a.s"
+	@echo "... hw4b.o"
+	@echo "... hw4b.i"
+	@echo "... hw4b.s"
 	@echo "... hw4c.o"
 	@echo "... hw4c.i"
 	@echo "... hw4c.s"

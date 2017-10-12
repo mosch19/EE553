@@ -70,7 +70,7 @@ ostream& operator <<(ostream& s, const String& str) {
 // if they are sharing memory then they arent really copies. if you write on one paper it wont change on a copy...what are computers
 // when you copy objects with pointers the pointers are the same which is pretty fatal because when object 1 dies then the memory is deleted but when the second one has to delete it there is nothing there. Cannot delete the same memory twice
 
-string operator +(const String& a, const String& b) {
+String operator +(const String& a, const String& b) {
     String result;
     len = a.len + b.len;
     result.p = new char[len];

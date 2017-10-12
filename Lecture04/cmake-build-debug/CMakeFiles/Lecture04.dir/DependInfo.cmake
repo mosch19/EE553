@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mosch/CLionProjects/Lecture04/hw4a.cpp" "/home/mosch/CLionProjects/Lecture04/cmake-build-debug/CMakeFiles/Lecture04.dir/hw4a.cpp.o"
+  "/home/mosch/CLionProjects/Lecture04/hw4b.cpp" "/home/mosch/CLionProjects/Lecture04/cmake-build-debug/CMakeFiles/Lecture04.dir/hw4b.cpp.o"
   "/home/mosch/CLionProjects/Lecture04/hw4c.cpp" "/home/mosch/CLionProjects/Lecture04/cmake-build-debug/CMakeFiles/Lecture04.dir/hw4c.cpp.o"
   "/home/mosch/CLionProjects/Lecture04/main.cpp" "/home/mosch/CLionProjects/Lecture04/cmake-build-debug/CMakeFiles/Lecture04.dir/main.cpp.o"
   "/home/mosch/CLionProjects/Lecture04/matrix.cpp" "/home/mosch/CLionProjects/Lecture04/cmake-build-debug/CMakeFiles/Lecture04.dir/matrix.cpp.o"

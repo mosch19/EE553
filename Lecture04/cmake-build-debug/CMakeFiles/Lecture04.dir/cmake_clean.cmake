@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Lecture04.dir/matrix.cpp.o"
   "CMakeFiles/Lecture04.dir/hw4a.cpp.o"
   "CMakeFiles/Lecture04.dir/hw4c.cpp.o"
+  "CMakeFiles/Lecture04.dir/hw4b.cpp.o"
   "Lecture04.pdb"
   "Lecture04"
 )

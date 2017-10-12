@@ -27,14 +27,21 @@ public:
             rgba[i] = orig.rgba[i];
         }
     }
-    Bitmap horizLine(uint32_t x1, uint32_t x2, uint32_t y, double color) {
+    // OPERATOR =
+    Bitmap& operator = (const Bitmap& orig) {
+        Bitmap copy(orig);
+        swap(copy.rgba, rgba);
+        swap(copy.rows, rows);
+        swap(copy.cols, cols);
+    }
+    Bitmap horizLine(uint32_t x1, uint32_t x2, uint32_t y, uint32_t color) {
         for (uint32_t i = x1; i < x2; i++) {
-            rgba[i+rows*y] = color;
+            rgba[i+y*cols] = color;
         }
     }
-    Bitmap vertLine(uint32_t y1, uint32_t y2, uint32_t x, double color) {
+    Bitmap vertLine(uint32_t y1, uint32_t y2, uint32_t x, uint32_t color) {
         for (uint32_t i = y1; i < y2; i++) {
-            rgba[x+cols*i] = color;
+            rgba[x+i*cols] = color;
         }
     }
     friend ostream& operator << (ostream& s, const Bitmap& b) {
@@ -48,6 +55,7 @@ public:
             count++;
         }
         s << endl;
+
         return s;
     }
 
@@ -58,22 +66,19 @@ int main() {
     Bitmap b1(3,5); // rows,cols or y,x (NOT x,y)
     cout << b1;
     /*
-    r,g,b   rgb = ((r*256 + g)*256 + b
-    this is the same as:
-    rgb = ((r << 8) + g) << 8) + b
-    use setw(4) in iomanip
+        r,g,b   rgb = ((r*256 + g)*256 + b
+        this is the same as:
+        rgb = ((r << 8) + g) << 8) + b
+        use setw(4) in iomanip
         0,0,0     0,0,0   255,0,255    0,0,0   255,0,0
         0,0,0     0,0,0   255,0,255    0,0,0   255,0,0
         0,0,0     0,0,0   255,0,255    0,0,0   255,0,0
-    */
+     */
     Bitmap b2(10,20);
-    cout << b2;
+    b2.horizLine(3, 15, 0, 0xFF00FF); // go from (3,0) to (15,0) writing color
 
-    b2.horizLine(3, 15, 0, 1);//0xFF00FF); // go from (3,0) to (15,0) writing color
-    b2.vertLine(0, 8, 0, 1);//0x000100);// go from (0,0) to (0,8) writing color
 
-    cout << b2;
-
+    b2.vertLine(0, 8, 0, 0x000100);// go from (0,0) to (0,8) writing color
     return 0;
 }
 

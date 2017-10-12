@@ -87,6 +87,9 @@
 		<Unit filename="/home/mosch/CLionProjects/Lecture04/hw4a.cpp">
 			<Option target="Lecture04"/>
 		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture04/hw4b.cpp">
+			<Option target="Lecture04"/>
+		</Unit>
 		<Unit filename="/home/mosch/CLionProjects/Lecture04/hw4c.cpp">
 			<Option target="Lecture04"/>
 		</Unit>

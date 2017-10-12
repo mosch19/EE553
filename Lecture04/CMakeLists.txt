@@ -3,5 +3,5 @@ project(Lecture04)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp matrix.cpp hw4a.cpp hw4c.cpp)
+set(SOURCE_FILES main.cpp matrix.cpp hw4a.cpp hw4c.cpp hw4b.cpp)
 add_executable(Lecture04 ${SOURCE_FILES})
