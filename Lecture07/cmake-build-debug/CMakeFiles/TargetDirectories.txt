@@ -1,3 +1,4 @@
 /home/mosch/CLionProjects/Lecture07/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/mosch/CLionProjects/Lecture07/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mosch/CLionProjects/Lecture07/cmake-build-debug/CMakeFiles/Lecture07.dir
+/home/mosch/CLionProjects/Lecture07/cmake-build-debug/CMakeFiles/bitmap.dir
+/home/mosch/CLionProjects/Lecture07/cmake-build-debug/CMakeFiles/account.dir

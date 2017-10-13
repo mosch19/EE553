@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/bitmap.dir/testBitmap.cpp.o  -o bitmap 

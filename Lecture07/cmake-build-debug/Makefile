@@ -111,17 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Lecture07
+# Target rules for targets named bitmap
 
 # Build rule for target.
-Lecture07: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Lecture07
-.PHONY : Lecture07
+bitmap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bitmap
+.PHONY : bitmap
 
 # fast build rule for target.
-Lecture07/fast:
-	$(MAKE) -f CMakeFiles/Lecture07.dir/build.make CMakeFiles/Lecture07.dir/build
-.PHONY : Lecture07/fast
+bitmap/fast:
+	$(MAKE) -f CMakeFiles/bitmap.dir/build.make CMakeFiles/bitmap.dir/build
+.PHONY : bitmap/fast
+
+#=============================================================================
+# Target rules for targets named account
+
+# Build rule for target.
+account: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 account
+.PHONY : account
+
+# fast build rule for target.
+account/fast:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/build
+.PHONY : account/fast
+
+Account.o: Account.cpp.o
+
+.PHONY : Account.o
+
+# target to build an object file
+Account.cpp.o:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/Account.cpp.o
+.PHONY : Account.cpp.o
+
+Account.i: Account.cpp.i
+
+.PHONY : Account.i
+
+# target to preprocess a source file
+Account.cpp.i:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/Account.cpp.i
+.PHONY : Account.cpp.i
+
+Account.s: Account.cpp.s
+
+.PHONY : Account.s
+
+# target to generate assembly for a file
+Account.cpp.s:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/Account.cpp.s
+.PHONY : Account.cpp.s
+
+floodFill.o: floodFill.cpp.o
+
+.PHONY : floodFill.o
+
+# target to build an object file
+floodFill.cpp.o:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/floodFill.cpp.o
+.PHONY : floodFill.cpp.o
+
+floodFill.i: floodFill.cpp.i
+
+.PHONY : floodFill.i
+
+# target to preprocess a source file
+floodFill.cpp.i:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/floodFill.cpp.i
+.PHONY : floodFill.cpp.i
+
+floodFill.s: floodFill.cpp.s
+
+.PHONY : floodFill.s
+
+# target to generate assembly for a file
+floodFill.cpp.s:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/floodFill.cpp.s
+.PHONY : floodFill.cpp.s
 
 main.o: main.cpp.o
 
@@ -129,7 +196,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Lecture07.dir/build.make CMakeFiles/Lecture07.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +205,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Lecture07.dir/build.make CMakeFiles/Lecture07.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,8 +214,35 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Lecture07.dir/build.make CMakeFiles/Lecture07.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+testBitmap.o: testBitmap.cpp.o
+
+.PHONY : testBitmap.o
+
+# target to build an object file
+testBitmap.cpp.o:
+	$(MAKE) -f CMakeFiles/bitmap.dir/build.make CMakeFiles/bitmap.dir/testBitmap.cpp.o
+.PHONY : testBitmap.cpp.o
+
+testBitmap.i: testBitmap.cpp.i
+
+.PHONY : testBitmap.i
+
+# target to preprocess a source file
+testBitmap.cpp.i:
+	$(MAKE) -f CMakeFiles/bitmap.dir/build.make CMakeFiles/bitmap.dir/testBitmap.cpp.i
+.PHONY : testBitmap.cpp.i
+
+testBitmap.s: testBitmap.cpp.s
+
+.PHONY : testBitmap.s
+
+# target to generate assembly for a file
+testBitmap.cpp.s:
+	$(MAKE) -f CMakeFiles/bitmap.dir/build.make CMakeFiles/bitmap.dir/testBitmap.cpp.s
+.PHONY : testBitmap.cpp.s
 
 # Help Target
 help:
@@ -158,10 +252,20 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Lecture07"
+	@echo "... bitmap"
+	@echo "... account"
+	@echo "... Account.o"
+	@echo "... Account.i"
+	@echo "... Account.s"
+	@echo "... floodFill.o"
+	@echo "... floodFill.i"
+	@echo "... floodFill.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... testBitmap.o"
+	@echo "... testBitmap.i"
+	@echo "... testBitmap.s"
 .PHONY : help
 
 

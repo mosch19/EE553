@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Lecture07">
-				<Option output="/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Lecture07" prefix_auto="0" extension_auto="0"/>
+			<Target title="bitmap">
+				<Option output="/home/mosch/CLionProjects/Lecture07/cmake-build-debug/bitmap" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/mosch/CLionProjects/Lecture07/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -54,14 +54,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lecture07"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 bitmap"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Lecture07/fast">
-				<Option output="/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Lecture07" prefix_auto="0" extension_auto="0"/>
+			<Target title="bitmap/fast">
+				<Option output="/home/mosch/CLionProjects/Lecture07/cmake-build-debug/bitmap" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/mosch/CLionProjects/Lecture07/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -77,15 +77,79 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lecture07/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 bitmap/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="account">
+				<Option output="/home/mosch/CLionProjects/Lecture07/cmake-build-debug/account" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mosch/CLionProjects/Lecture07/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 account"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="account/fast">
+				<Option output="/home/mosch/CLionProjects/Lecture07/cmake-build-debug/account" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mosch/CLionProjects/Lecture07/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 account/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mosch/CLionProjects/Lecture07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mosch/CLionProjects/Lecture07/Account.cpp">
+			<Option target="account"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture07/Account.h">
+			<Option target="account"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture07/Bank.h">
+			<Option target="account"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture07/Bitmap.h">
+			<Option target="account"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture07/floodFill.cpp">
+			<Option target="account"/>
+		</Unit>
 		<Unit filename="/home/mosch/CLionProjects/Lecture07/main.cpp">
-			<Option target="Lecture07"/>
+			<Option target="account"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture07/testBitmap.cpp">
+			<Option target="bitmap"/>
 		</Unit>
 		<Unit filename="/home/mosch/CLionProjects/Lecture07/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

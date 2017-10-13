@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/account.dir/main.cpp.o CMakeFiles/account.dir/Account.cpp.o CMakeFiles/account.dir/floodFill.cpp.o  -o account 
