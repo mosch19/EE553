@@ -93,7 +93,7 @@ public:
         }
         return result;
     }
-    // OPERATOR *
+    /*
     friend Matrix operator * (const Matrix& a, const Matrix& b) {
         // added for future changes to assignment
         if (a.rows != b.rows || a.cols != b.cols) {
@@ -104,7 +104,7 @@ public:
             result.m[i] = a.m[i] - b.m[i];
         }
         return result;
-    }
+    }*/
 };
 
 int main() {
