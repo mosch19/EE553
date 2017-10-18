@@ -8,7 +8,7 @@ using namespace std;
 class Matrix {
     double* m;
     uint32_t rows, cols;
-    // don't make it 2d array because it is slow and poor code
+    // don't make it 2d array because it is slow and poor code...exaclty what Jonah said
 public:
     // if unspecified it will be zero. pretty cool
     Matrix (uint32_t rows, uint32_t cols, double value = 0) {
@@ -21,7 +21,6 @@ public:
      * 8 9 10 11
      */
 
-    // exactly what Jonah said...
     double operator ()const (uint32_t r, uint32_t c) {
         return m[r * c + c];
     }
@@ -35,7 +34,7 @@ public:
 
 int main() {
     Matrix a(3, 4, 5.2); // create three rows of four columns of 5.2
-    Matrix b(3, 4); // deault everyting to zero
+    Matrix b(3, 4); // default everyting to zero
     cout << a << '\n';
     // cant return void on this or it will fail
     /*

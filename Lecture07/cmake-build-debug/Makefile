@@ -190,6 +190,60 @@ floodFill.cpp.s:
 	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/floodFill.cpp.s
 .PHONY : floodFill.cpp.s
 
+hw5a.o: hw5a.cpp.o
+
+.PHONY : hw5a.o
+
+# target to build an object file
+hw5a.cpp.o:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/hw5a.cpp.o
+.PHONY : hw5a.cpp.o
+
+hw5a.i: hw5a.cpp.i
+
+.PHONY : hw5a.i
+
+# target to preprocess a source file
+hw5a.cpp.i:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/hw5a.cpp.i
+.PHONY : hw5a.cpp.i
+
+hw5a.s: hw5a.cpp.s
+
+.PHONY : hw5a.s
+
+# target to generate assembly for a file
+hw5a.cpp.s:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/hw5a.cpp.s
+.PHONY : hw5a.cpp.s
+
+hw7?.o: hw7?.cpp.o
+
+.PHONY : hw7?.o
+
+# target to build an object file
+hw7?.cpp.o:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/hw7?.cpp.o
+.PHONY : hw7?.cpp.o
+
+hw7?.i: hw7?.cpp.i
+
+.PHONY : hw7?.i
+
+# target to preprocess a source file
+hw7?.cpp.i:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/hw7?.cpp.i
+.PHONY : hw7?.cpp.i
+
+hw7?.s: hw7?.cpp.s
+
+.PHONY : hw7?.s
+
+# target to generate assembly for a file
+hw7?.cpp.s:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/hw7?.cpp.s
+.PHONY : hw7?.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -260,6 +314,12 @@ help:
 	@echo "... floodFill.o"
 	@echo "... floodFill.i"
 	@echo "... floodFill.s"
+	@echo "... hw5a.o"
+	@echo "... hw5a.i"
+	@echo "... hw5a.s"
+	@echo "... hw7?.o"
+	@echo "... hw7?.i"
+	@echo "... hw7?.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
