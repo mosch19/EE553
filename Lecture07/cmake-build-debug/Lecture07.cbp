@@ -154,6 +154,12 @@
 		<Unit filename="/home/mosch/CLionProjects/Lecture07/main.cpp">
 			<Option target="account"/>
 		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture07/practice1.cpp">
+			<Option target="account"/>
+		</Unit>
+		<Unit filename="/home/mosch/CLionProjects/Lecture07/practice2.cpp">
+			<Option target="account"/>
+		</Unit>
 		<Unit filename="/home/mosch/CLionProjects/Lecture07/testBitmap.cpp">
 			<Option target="bitmap"/>
 		</Unit>

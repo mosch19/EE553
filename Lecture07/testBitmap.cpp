@@ -1,5 +1,4 @@
 #include <cstdint>
-
 //
 // Created by mosch on 10/13/17.
 //
@@ -17,4 +16,3 @@ int main() {
     b.drawRect(700, 600, 50, 50);   // red rectangle
     b.fill(720, 605, BLUE);   // fill in shape so keep going until hit an edge...this homework seems really hard
 }
-

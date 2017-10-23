@@ -14,7 +14,7 @@ public:
         imag = 0.0;
     }
     // CLION didn't like this not being explicit
-    explicit Complex(double r) {
+    Complex(double r) {
         real = r;
         imag = 0.0;
     }

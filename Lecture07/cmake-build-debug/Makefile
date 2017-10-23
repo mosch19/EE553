@@ -271,6 +271,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+practice1.o: practice1.cpp.o
+
+.PHONY : practice1.o
+
+# target to build an object file
+practice1.cpp.o:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/practice1.cpp.o
+.PHONY : practice1.cpp.o
+
+practice1.i: practice1.cpp.i
+
+.PHONY : practice1.i
+
+# target to preprocess a source file
+practice1.cpp.i:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/practice1.cpp.i
+.PHONY : practice1.cpp.i
+
+practice1.s: practice1.cpp.s
+
+.PHONY : practice1.s
+
+# target to generate assembly for a file
+practice1.cpp.s:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/practice1.cpp.s
+.PHONY : practice1.cpp.s
+
+practice2.o: practice2.cpp.o
+
+.PHONY : practice2.o
+
+# target to build an object file
+practice2.cpp.o:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/practice2.cpp.o
+.PHONY : practice2.cpp.o
+
+practice2.i: practice2.cpp.i
+
+.PHONY : practice2.i
+
+# target to preprocess a source file
+practice2.cpp.i:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/practice2.cpp.i
+.PHONY : practice2.cpp.i
+
+practice2.s: practice2.cpp.s
+
+.PHONY : practice2.s
+
+# target to generate assembly for a file
+practice2.cpp.s:
+	$(MAKE) -f CMakeFiles/account.dir/build.make CMakeFiles/account.dir/practice2.cpp.s
+.PHONY : practice2.cpp.s
+
 testBitmap.o: testBitmap.cpp.o
 
 .PHONY : testBitmap.o
@@ -323,6 +377,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... practice1.o"
+	@echo "... practice1.i"
+	@echo "... practice1.s"
+	@echo "... practice2.o"
+	@echo "... practice2.i"
+	@echo "... practice2.s"
 	@echo "... testBitmap.o"
 	@echo "... testBitmap.i"
 	@echo "... testBitmap.s"

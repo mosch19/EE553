@@ -21,7 +21,7 @@ public:
      * 8 9 10 11
      */
 
-    double operator ()const (uint32_t r, uint32_t c) {
+    double operator () (uint32_t r, uint32_t c) const {
         return m[r * c + c];
     }
     // this one is not read only

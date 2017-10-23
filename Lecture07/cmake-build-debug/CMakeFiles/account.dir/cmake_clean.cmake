@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/account.dir/floodFill.cpp.o"
   "CMakeFiles/account.dir/hw5a.cpp.o"
   "CMakeFiles/account.dir/hw7?.cpp.o"
+  "CMakeFiles/account.dir/practice1.cpp.o"
+  "CMakeFiles/account.dir/practice2.cpp.o"
   "account.pdb"
   "account"
 )

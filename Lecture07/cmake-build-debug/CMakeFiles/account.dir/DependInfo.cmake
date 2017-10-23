@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mosch/CLionProjects/Lecture07/hw5a.cpp" "/home/mosch/CLionProjects/Lecture07/cmake-build-debug/CMakeFiles/account.dir/hw5a.cpp.o"
   "/home/mosch/CLionProjects/Lecture07/hw7?.cpp" "/home/mosch/CLionProjects/Lecture07/cmake-build-debug/CMakeFiles/account.dir/hw7?.cpp.o"
   "/home/mosch/CLionProjects/Lecture07/main.cpp" "/home/mosch/CLionProjects/Lecture07/cmake-build-debug/CMakeFiles/account.dir/main.cpp.o"
+  "/home/mosch/CLionProjects/Lecture07/practice1.cpp" "/home/mosch/CLionProjects/Lecture07/cmake-build-debug/CMakeFiles/account.dir/practice1.cpp.o"
+  "/home/mosch/CLionProjects/Lecture07/practice2.cpp" "/home/mosch/CLionProjects/Lecture07/cmake-build-debug/CMakeFiles/account.dir/practice2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

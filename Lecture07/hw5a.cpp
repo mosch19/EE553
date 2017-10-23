@@ -38,8 +38,7 @@ public:
         return result;
     }
     friend Vec3d operator * (int b, const Vec3d& a) {
-        Vec3d result(a.x*b, a.y*b, a.z*b);
-        return result;
+        return a * b;
     }
     friend Vec3d operator + (const Vec3d& a, const Vec3d& b) {
         Vec3d result(a.x+b.x, a.y+b.y, a.z+b.z);
