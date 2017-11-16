@@ -5,6 +5,7 @@
 using namespace std;
 
 constexpr double pi = 3.1415926535;
+#define ONE_S "  "
 
 class Vec3d {
 private:
@@ -15,14 +16,14 @@ public:
     void print() {
         cout << '<' << x << ", " << y << ", " << z << '>' << '\n';
     }
-    double getX() const {
-        return x;
+    void incX(int size) {
+        x += size;
     }
-    double getY() const {
-        return y;
+    void incY(int size) {
+        y+= size;
     }
-    double getZ() const {
-        return z;
+    void incZ(int size) {
+        z += size;
     }
     // dot product method
     double dot(const Vec3d& a) {
@@ -48,14 +49,65 @@ public:
         Vec3d result(a.x-b.x, a.y-b.y, a.z-b.z);
         return result;
     }
+    friend ostream& operator << (ostream &s, const Vec3d& a) {
+        s << a.x << ' ' << a.y << ' ' << a.z;
+    }
 
 };
 
-class Shape {
-protected:
-    double x, y, z;
+class Face {
+private:
+    Vec3d a;
+    Vec3d b;
+    Vec3d c;
 public:
-    Shape (double x, double y, double z) : x(x), y(y), z(z) {}
+    Face(Vec3d a, Vec3d b, Vec3d c) : a(a), b(b), c(c) {}
+    void print() {
+        cout << a << b << c << '\n';
+    }
+    Vec3d getA() const {
+        return a;
+    }
+
+    Vec3d getB() const {
+        return b;
+    }
+
+    Vec3d getC() const {
+        return c;
+    }
+};
+
+class Shape {
+protected: 
+    string name;
+    double x, y, z;
+    vector<Vec3d> vertices;
+    vector<Vec3d> normals;
+    vector<Face> faces;
+public:
+    Shape (double x, double y, double z) : x(x), y(y), z(z), name("") {}
+    void vertexInfo() const {
+        for (auto z : vertices) {
+            z.print();
+        }
+    }
+    void writeToSTL(string f) const {
+        ofstream file;
+        file.open(f ,ofstream::app);
+        file << "solid " << name << '\n';
+        for (int i = 0; i < faces.size(); i++) {
+            file << ONE_S << "facet normal " << normals[i] << '\n';
+            file << ONE_S << ONE_S << "outer loop" << '\n';
+            file << ONE_S << ONE_S << ONE_S << "vertex " << faces[i].getA() << '\n';
+            file << ONE_S << ONE_S << ONE_S << "vertex " << faces[i].getB() << '\n';
+            file << ONE_S << ONE_S << ONE_S << "vertex " << faces[i].getC() << '\n';
+            file << ONE_S << ONE_S << "endloop" << '\n';
+            file << ONE_S << "endfacet" << '\n';
+        }
+        file << "endsolid " << name << '\n';
+        file.close();
+    }
     virtual void print() const = 0;
 };
 
@@ -64,9 +116,29 @@ private:
 	double r, h;
 	int facets;
 public:
-    Cylinder(double x, double y, double z, double r, double h, int facets) : Shape(x, y, z), r(r), h(h) {}
+    Cylinder(double x, double y, double z, double r, double h, int facets) : Shape(x, y, z), r(r), h(h) {
+        name = "Cylinder";
+        double theta = 360.0 / (facets + 1);
+        // create top points
+        for (int i = 0; i < facets + 1; i++) {
+            Shape::vertices.push_back(Vec3d(r * cos(theta * i), r * sin(theta * i), z + h));
+        }
+        // create bottom points
+        for (int i = 0; i < facets + 1; i++) {
+            Shape::vertices.push_back(Vec3d(r * cos(theta * i), r * sin(theta * i), z));
+        }
+
+        // make faces
+        for (int i = 0; i < (facets * 2) + 2; i++) {
+            Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + facets], Shape::vertices[i + facets + 1]));
+            Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + 1], Shape::vertices[i + facets + 1]));
+        }
+    }
     void print() const {
-        cout << "R: " << r << ", H: " << h << ", at (" << x << ',' << y << ',' << z << ")" << '\n';
+        cout << name << ", R: " << r << ", H: " << h << ", at (" << x << ',' << y << ',' << z << ")" << '\n';
+        for (int i = 0; i < Shape::vertices.size(); i++) {
+            cout << Shape::vertices[i] << endl;
+        } 
     }
 };
 
@@ -75,11 +147,51 @@ private:
 	double size;
 public:
     Cube(double x, double y, double z, double size) : Shape(x, y, z), size(size) {
-        // need to create the vectors for the cube
-        vector
+        name = "Cube";
+
+        // initialize all the points
+        Shape::vertices.push_back(Vec3d(x + size, y, z + size));
+        Shape::vertices.push_back(Vec3d(x, y + size, z + size));
+        Shape::vertices.push_back(Vec3d(x + size, y + size, z + size));
+        Shape::vertices.push_back(Vec3d(x, y, z + size));
+        Shape::vertices.push_back(Vec3d(x, y, z));
+        Shape::vertices.push_back(Vec3d(x + size, y + size, z));
+        Shape::vertices.push_back(Vec3d(x, y + size, z));
+        Shape::vertices.push_back(Vec3d(x + size, y, z));
+
+        // create the 12 faces
+        Shape::faces.push_back(Face(Shape::vertices[0], Shape::vertices[1], Shape::vertices[2]));
+        Shape::faces.push_back(Face(Shape::vertices[1], Shape::vertices[0], Shape::vertices[3]));
+        Shape::faces.push_back(Face(Shape::vertices[4], Shape::vertices[5], Shape::vertices[6]));
+        Shape::faces.push_back(Face(Shape::vertices[5], Shape::vertices[4], Shape::vertices[7]));
+        Shape::faces.push_back(Face(Shape::vertices[4], Shape::vertices[1], Shape::vertices[3]));
+        Shape::faces.push_back(Face(Shape::vertices[1], Shape::vertices[4], Shape::vertices[6]));
+        Shape::faces.push_back(Face(Shape::vertices[1], Shape::vertices[5], Shape::vertices[2]));
+        Shape::faces.push_back(Face(Shape::vertices[5], Shape::vertices[1], Shape::vertices[6]));
+        Shape::faces.push_back(Face(Shape::vertices[5], Shape::vertices[0], Shape::vertices[2]));
+        Shape::faces.push_back(Face(Shape::vertices[0], Shape::vertices[5], Shape::vertices[7]));
+        Shape::faces.push_back(Face(Shape::vertices[4], Shape::vertices[0], Shape::vertices[7]));
+        Shape::faces.push_back(Face(Shape::vertices[0], Shape::vertices[4], Shape::vertices[3]));
+
+        // initialize the normals
+        Shape::normals.push_back(Vec3d(0, 0, 1));
+        Shape::normals.push_back(Vec3d(0, 0, 1));
+        Shape::normals.push_back(Vec3d(0, 0, -1));
+        Shape::normals.push_back(Vec3d(0, 0, -1));
+        Shape::normals.push_back(Vec3d(0, -1, 0));
+        Shape::normals.push_back(Vec3d(0, -1, 0));
+        Shape::normals.push_back(Vec3d(1, 0, 0));
+        Shape::normals.push_back(Vec3d(1, 0, 0));
+        Shape::normals.push_back(Vec3d(0, 1, 0));
+        Shape::normals.push_back(Vec3d(0, 1, 0));
+        Shape::normals.push_back(Vec3d(-1, 0, 0));
+        Shape::normals.push_back(Vec3d(-1, 0, 0));
     }
     void print() const {
-        cout << "Size: " << size << ", at (" << x << ',' << y << ',' << z << ")" << '\n';        
+        cout << name << ", Size: " << size << ", at (" << x << ',' << y << ',' << z << ")" << '\n';        
+        for (int i = 0; i < Shape::vertices.size(); i++) {
+            cout << Shape::vertices[i] << endl;
+        }
     }
 };
 
@@ -99,7 +211,11 @@ public:
     }
 
     void write(string s) {
-        cout << s << '\n';
+        for (auto x : shapes) {
+            x->print();
+            x->writeToSTL(s);
+            // x->vertexInfo();
+        }
     }
 };
 
@@ -107,7 +223,7 @@ public:
 //https://www.viewstl.com/
 int main() {
 	CAD c;
-	c.add(new Cube(0,0,0,5));
+	c.add(new Cube(0,0,0,10));
 	c.add(new Cylinder(100,0,0,3, 10, 10));
     c.write("test.stl");
 }
