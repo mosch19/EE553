@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mosch/CLionProjects/lecture09/main.cpp" "/home/mosch/CLionProjects/lecture09/cmake-build-debug/CMakeFiles/lecture09.dir/main.cpp.o"
-  "/home/mosch/CLionProjects/lecture09/vector.cpp" "/home/mosch/CLionProjects/lecture09/cmake-build-debug/CMakeFiles/lecture09.dir/vector.cpp.o"
-  "/home/mosch/CLionProjects/lecture09/vector_polymorphism.cpp" "/home/mosch/CLionProjects/lecture09/cmake-build-debug/CMakeFiles/lecture09.dir/vector_polymorphism.cpp.o"
+  "/home/mosch/CLionProjects/Lecture09/main.cpp" "/home/mosch/CLionProjects/Lecture09/cmake-build-debug/CMakeFiles/lecture09.dir/main.cpp.o"
+  "/home/mosch/CLionProjects/Lecture09/vector.cpp" "/home/mosch/CLionProjects/Lecture09/cmake-build-debug/CMakeFiles/lecture09.dir/vector.cpp.o"
+  "/home/mosch/CLionProjects/Lecture09/vector_polymorphism.cpp" "/home/mosch/CLionProjects/Lecture09/cmake-build-debug/CMakeFiles/lecture09.dir/vector_polymorphism.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

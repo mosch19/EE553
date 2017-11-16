@@ -121,17 +121,37 @@ public:
         double theta = 360.0 / (facets + 1);
         // create top points
         for (int i = 0; i < facets + 1; i++) {
-            Shape::vertices.push_back(Vec3d(r * cos(theta * i), r * sin(theta * i), z + h));
+            cout << theta*i << ' '; 
+            if (theta * i < 90) {
+                // quadrant 1
+                Shape::vertices.push_back(Vec3d(r * cos(theta * i * pi/180), r * sin(theta * i * pi/180), z + h));
+            } else if(theta * i < 180 && theta * i > 90) {
+                // quadrant 2
+                Shape::vertices.push_back(Vec3d(-r * cos((180 - theta * i)* pi/180), r * sin((180 - theta * i)* pi/180), z + h));
+            } else if(theta * i < 270 && theta * i > 180) {
+                // quadrant 3
+                Shape::vertices.push_back(Vec3d(-r * cos((theta * i - 180)* pi/180), -r * sin((theta * i - 180)* pi/180), z + h));
+            } else {
+                // quadrant 4
+                Shape::vertices.push_back(Vec3d(r * cos((360 - theta * i)* pi/180), -r * sin((360 - theta * i)* pi/180), z + h));
+            }
         }
         // create bottom points
         for (int i = 0; i < facets + 1; i++) {
             Shape::vertices.push_back(Vec3d(r * cos(theta * i), r * sin(theta * i), z));
         }
-
+        
         // make faces
-        for (int i = 0; i < (facets * 2) + 2; i++) {
-            Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + facets], Shape::vertices[i + facets + 1]));
-            Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + 1], Shape::vertices[i + facets + 1]));
+        for (int i = 0; i < facets + 1; i++) {
+            cout << i << ' ';
+            if (int i = facets) {
+                //Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[facets], Shape::vertices[facets + 1]));
+                //Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[1], Shape::vertices[facets + 1]));
+            } else {
+                //Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + facets], Shape::vertices[i + facets + 1]));
+                //Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + 1], Shape::vertices[i + facets + 1]));
+            }
+            cout << Shape::vertices[i] << '\n';
         }
     }
     void print() const {
