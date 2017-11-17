@@ -157,20 +157,23 @@ public:
             }
         }
 
-        /* / create lid
-        for (int i = 0; i < size - 3; i++) {
-            Shape::normals.push_back(Vec3d(0, 0, 0));
-            Shape::normals.push_back(Vec3d(0, 0, 0));
-            Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + 1], Shape::vertices[size*2]));
-            Shape::faces.push_back(Face(Shape::vertices[i + size - 1], Shape::vertices[i + size], Shape::vertices[size*2+1]));
-        }
-        */
         int size = Shape::vertices.size()/2;
-
-        // add top and bottom center points
-        //Shape::vertices.push_back(Vec3d(x, y, z));
-        //Shape::vertices.push_back(Vec3d(x, y, z + h));
-
+        
+        // add top and bottom center points at size * 2 & size * 2 + 1
+        Shape::vertices.push_back(Vec3d(x, y, z));
+        Shape::vertices.push_back(Vec3d(x, y, z + h));
+        for (int i = 0; i <= size - 1; i++) {
+            Shape::normals.push_back(Vec3d(0, 0, 0));
+            Shape::normals.push_back(Vec3d(0, 0, 0));
+            if (i == size - 1) {
+                Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[0], Shape::vertices[size*2+1]));
+                Shape::faces.push_back(Face(Shape::vertices[i + size - 1], Shape::vertices[0 + size], Shape::vertices[size*2]));
+            } else {
+                Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + 1], Shape::vertices[size*2+1]));
+                Shape::faces.push_back(Face(Shape::vertices[i + size - 1], Shape::vertices[i + size], Shape::vertices[size*2]));
+            }
+        }
+        
         // make faces
         for (int i = 0; i <= size - 1; i++) {
             Shape::normals.push_back(Vec3d(0, 0, 0));
@@ -269,7 +272,7 @@ public:
 //https://www.viewstl.com/
 int main() {
 	CAD c;
-	//c.add(new Cube(0,0,0,10));
-	c.add(new Cylinder(0,0,0,3, 10, 10));
+	c.add(new Cube(0,0,0,   5));
+	c.add(new Cylinder(100,0,0,    3, 10, 10));
     c.write("test.stl");
 }
