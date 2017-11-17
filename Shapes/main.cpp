@@ -49,8 +49,8 @@ public:
         Vec3d result(a.x-b.x, a.y-b.y, a.z-b.z);
         return result;
     }
-    friend ostream& operator << (ostream &s, const Vec3d& a) {
-        s << a.x << ' ' << a.y << ' ' << a.z;
+    friend ostream& operator << (ostream& s, const Vec3d& a) {
+        return s << a.x << ' ' << a.y << ' ' << a.z;
     }
 
 };
@@ -63,7 +63,7 @@ private:
 public:
     Face(Vec3d a, Vec3d b, Vec3d c) : a(a), b(b), c(c) {}
     void print() {
-        cout << a << ' ' << b << ' ' << c << endl;
+        cout << a << b << c << '\n';
     }
     Vec3d getA() const {
         return a;
@@ -79,7 +79,7 @@ public:
 };
 
 class Shape {
-protected: 
+protected:
     string name;
     double x, y, z;
     vector<Vec3d> vertices;
@@ -89,11 +89,6 @@ public:
     Shape (double x, double y, double z) : x(x), y(y), z(z), name("") {}
     void vertexInfo() const {
         for (auto z : vertices) {
-            z.print();
-        }
-    }
-    void faceInfo() const {
-        for (auto z : faces) {
             z.print();
         }
     }
@@ -118,14 +113,14 @@ public:
 
 class Cylinder : public Shape{
 private:
-	double r, h;
-	int facets;
+    double r, h;
+    int facets;
 public:
     Cylinder(double x, double y, double z, double r, double h, int facets) : Shape(x, y, z), r(r), h(h), facets(facets) {
         name = "Cylinder";
-        double theta = 360.0 / (facets);
+        double theta = 360.0 / (facets + 1);
         // create top points
-        for (int i = 0; i < facets; i++) {
+        for (int i = 0; i < facets + 1; i++) {
             if (theta * i < 90) {
                 // quadrant 1
                 Shape::vertices.push_back(Vec3d(r * cos(theta * i * pi/180), r * sin(theta * i * pi/180), z + h));
@@ -157,28 +152,16 @@ public:
             }
         }
 
-        /* / create lid
-        for (int i = 0; i < size - 3; i++) {
-            Shape::normals.push_back(Vec3d(0, 0, 0));
-            Shape::normals.push_back(Vec3d(0, 0, 0));
-            Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + 1], Shape::vertices[size*2]));
-            Shape::faces.push_back(Face(Shape::vertices[i + size - 1], Shape::vertices[i + size], Shape::vertices[size*2+1]));
-        }
-        */
-        int size = Shape::vertices.size()/2;
-
-        // add top and bottom center points
-        //Shape::vertices.push_back(Vec3d(x, y, z));
-        //Shape::vertices.push_back(Vec3d(x, y, z + h));
-
+        Shape::faces.push_back(Face(Shape::vertices[0], Shape::vertices[1], Shape::vertices[2]));
         // make faces
-        for (int i = 0; i <= size - 1; i++) {
+        int size = Shape::vertices.size()/2;
+        for (int i = 0; i < size; i++) {
             Shape::normals.push_back(Vec3d(0, 0, 0));
             Shape::normals.push_back(Vec3d(0, 0, 0));
             // if it is last point need to get first one
             if (i == size - 1) {
-                Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[0], Shape::vertices[size]));
-                Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + size], Shape::vertices[size]));
+                Shape::faces.push_back(Face(Shape::vertices[0], Shape::vertices[size], Shape::vertices[size + 1]));
+                Shape::faces.push_back(Face(Shape::vertices[0], Shape::vertices[1], Shape::vertices[size + 1]));
             } else {
                 Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + size], Shape::vertices[i + size + 1]));
                 Shape::faces.push_back(Face(Shape::vertices[i], Shape::vertices[i + 1], Shape::vertices[i + size + 1]));
@@ -192,7 +175,7 @@ public:
 
 class Cube: public Shape {
 private:
-	double size;
+    double size;
 public:
     Cube(double x, double y, double z, double size) : Shape(x, y, z), size(size) {
         name = "Cube";
@@ -236,7 +219,7 @@ public:
         Shape::normals.push_back(Vec3d(-1, 0, 0));
     }
     void print() const {
-        cout << name << ", Size: " << size << ", at (" << x << ',' << y << ',' << z << ")" << '\n';        
+        cout << name << ", Size: " << size << ", at (" << x << ',' << y << ',' << z << ")" << '\n';
     }
 };
 
@@ -260,7 +243,6 @@ public:
             x->print();
             x->writeToSTL(s);
             x->vertexInfo();
-            x->faceInfo();
         }
     }
 };
@@ -268,8 +250,8 @@ public:
 //https://www.stratasysdirect.com/resources/how-to-prepare-stl-files/
 //https://www.viewstl.com/
 int main() {
-	CAD c;
-	//c.add(new Cube(0,0,0,10));
-	c.add(new Cylinder(0,0,0,3, 10, 10));
+    CAD c;
+    c.add(new Cube(0,0,0,10));
+    c.add(new Cylinder(100,0,0,3, 10, 10));
     c.write("test.stl");
 }
